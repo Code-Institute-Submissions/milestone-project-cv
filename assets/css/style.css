@@ -1,0 +1,52 @@
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+}
+/************** Header/Navigation section **** START **************/
+header{
+    background-color: #336699;
+    padding-bottom: 1rem;
+}
+header ul {
+    list-style-type: none;
+    margin: 0;  
+    padding: 20px 5px 0 5px;
+    text-align: right;
+    
+}
+header ul li {
+     display: inline-block;
+     padding-right: 0.5rem;
+     width: 15rem;
+      
+}
+
+header a{
+    text-decoration: none;
+    color: rgb(255,255,255);
+    font-size: 1.4em;
+   
+}
+header a:hover,  .visited a{
+    border-bottom: 2px solid rgb(0,0,0);
+    color: rgb(0,0,0);
+}
+/************** Header/Navigation section **** END **************/
+/*  */
+/* *************Profile section *** START ************/
+
+.bg {
+
+  background-image: url("../images/background.jpg");
+  height: 50%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* *************Profile section END ************/
+
