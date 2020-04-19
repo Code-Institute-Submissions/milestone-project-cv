@@ -1,52 +1,94 @@
-body, html {
-  height: 100%;
-  width: 100%;
+body,
+html {
+    height: 100%;
+    width: 100%;
 }
 
-h1, h2, h3, h4 {
+body {
+    background-color: rgb(220, 220, 220);
+    ;
+}
+
+h1,
+h2,
+h3,
+h4 {
     margin: 0;
 }
+
+
 /************** Header/Navigation section **** START **************/
-header{
-    background-color: #336699;
+
+header {
+    background-color: rgb(51, 102, 153);
     padding-bottom: 1rem;
 }
+
 header ul {
     list-style-type: none;
-    margin: 0;  
+    margin: 0;
     padding: 20px 5px 0 5px;
     text-align: right;
-    
-}
-header ul li {
-     display: inline-block;
-     padding-right: 0.5rem;
-     width: 15rem;
-      
 }
 
-header a{
+header ul li {
+    display: inline-block;
+    padding-right: 0.5rem;
+    width: 15rem;
+}
+
+header a {
     text-decoration: none;
-    color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
     font-size: 1.4em;
-   
 }
-header a:hover,  .visited a{
-    border-bottom: 2px solid rgb(0,0,0);
-    color: rgb(0,0,0);
+
+header a:hover,
+.visited a {
+    border-bottom: 2px solid rgb(78, 177, 186);
+    color: rgb(78, 177, 186);
 }
+
+
 /************** Header/Navigation section **** END **************/
-/*  */
+
+
 /* *************Profile section *** START ************/
 
 .bg {
-
-  background-image: url("../images/background.jpg");
-  height: 50%; 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    /* linear-gradient( rgba(51, 102, 153, 1.05), rgba(0, 0, 0, 0.05)), */
+    background: linear-gradient( rgba(51, 102, 153, 1.05), rgba(0, 0, 0, 0.05)), url("../images/background.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+#profile {
+    width: 80%;
+    margin: 0 auto;
+}
+
 
 /* *************Profile section END ************/
 
+
+/* ****************FOOTER SECTION START********************* */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5rem;
+    text-align: center;
+    background: linear-gradient( rgba(0, 0, 0, 0.55), rgba(51, 102, 153, 1.05));
+    color: rgb(78, 177, 186);
+}
+
+footer p {
+    margin: 0;
+    padding: 1rem;
+}
+
+
+/* ****************FOOTER SECTION END********************* */
