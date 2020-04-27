@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 body,
 html {
     height: 100%;
@@ -15,7 +15,25 @@ h2,
 h3,
 h4 {
     margin: 0;
-    color: rgba(51, 102, 153);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    padding: 2em;
+}
+
+p::first-letter {
+    float: left;
+    font-size: 2em;
+    margin: 0 .2em 0 0;
+}
+
+h1 {
+    color: rgb(45, 60, 71);
+    font-size: 2em;
+    letter-spacing: 0.1em;
 }
 
 
@@ -26,8 +44,8 @@ h4 {
 }
 
 .border-colour {
-    border: 2px solid gray;
-    ;
+    border: 4px solid rgb(128, 128, 128);
+    border-style: outset;
 }
 
 
@@ -36,35 +54,57 @@ h4 {
 header {
     background-color: rgb(51, 102, 153);
     padding: 1rem;
-    font-family: 'Roboto Slab', serif;
 }
 
-header ul {
-    list-style-type: none;
-    margin: 0;
-    text-align: right;
-}
-
-header ul li {
+#logo {
     display: inline-block;
-    box-sizing: border-box;
-    padding-right: 0.5em;
-    width: 12rem;
+    color: rgb(180, 180, 180);
+    font-size: 1.5em;
+}
+
+#main-nav {
+    list-style-type: none;
+    display: none;
+    flex-direction: column;
+}
+
+#main-nav li {
     text-align: center;
+    margin: 15px auto;
     text-transform: capitalize;
 }
 
-header a {
+.nav-links {
     color: rgb(255, 255, 255);
     font-size: 1.2em;
+    text-decoration: none;
+    border-top: 2px solid rgb(255, 255, 255);
+    /* border-left: 2px solid rgb(255, 255, 255); */
+    padding: 5px;
 }
 
-header a:hover,
-.visited a {
+.nav-links:hover,
+.visited {
     text-decoration: none;
-    border-bottom: 3px solid rgb(78, 177, 186);
+    border-top: 3px solid rgb(78, 177, 186);
+    /* border-left: 3px solid rgb(78, 177, 186); */
     color: rgb(78, 177, 186);
-    font-size: 1.4em;
+}
+
+
+/*****************************************  */
+
+#navbar-toggle {
+    position: absolute;
+    top: 0.625rem;
+    right: 1.25rem;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 2em;
+}
+
+#navbar-toggle:hover {
+    color: rgba(255, 255, 255, 1);
 }
 
 
@@ -82,20 +122,21 @@ header a:hover,
 }
 
 #profile {
-    width: 70%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: colurowmn;
+    width: 60%;
 }
 
 #profile-img-box,
 #profile-text-box {
-    float: left;
-    height: 30em;
     margin-top: 25%;
-    box-sizing: border-box;
+    flex: 1;
+    max-width: 50%;
+    min-height: 300px;
 }
 
 #profile-img-box {
-    width: 35%;
     background-image: url(../images/gediminas-ConvertImage.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -103,10 +144,12 @@ header a:hover,
 }
 
 #profile-text-box {
-    margin-left: 0 auto;
-    width: 50%;
+    margin-left: 1.2em;
     text-align: center;
     padding-top: 2em;
+    background-color: rgb(255, 255, 255, 0.9);
+    font-size: 1.1em;
+    overflow: auto;
 }
 
 
@@ -116,19 +159,53 @@ header a:hover,
 /* ****************FOOTER SECTION START********************* */
 
 footer {
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
     height: 5rem;
+    margin: 0;
+    padding-top: 1.2rem;
     text-align: center;
     background: linear-gradient( rgba(0, 0, 0, 0.55), rgba(51, 102, 153, 1.05));
     color: rgb(78, 177, 186);
 }
 
-footer p {
-    margin: 0;
-    padding: 1rem;
+
+/* ****************FOOTER SECTION END********************* */
+
+
+/*  */
+
+
+/************************* RESPONSIVE ***************************/
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+    #main-nav {
+        display: flex !important;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    #main-nav li {
+        margin: 0;
+    }
+    .nav-links {
+        margin-left: 40px;
+    }
+    #logo {
+        margin-top: 0;
+    }
+    #navbar-toggle {
+        display: none;
+    }
 }
 
 
-/* ****************FOOTER SECTION END********************* */
+/*************************** RESPONSIVE END*************************/
