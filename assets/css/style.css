@@ -8,6 +8,7 @@ html {
 main {
     height: 100%;
     position: relative;
+    overflow: auto;
 }
 
 h1,
@@ -53,7 +54,8 @@ h1 {
 
 header {
     background-color: rgb(51, 102, 153);
-    padding: 1rem;
+    padding: 15px 0 0 15px;
+    min-height: 3.5em;
 }
 
 #logo {
@@ -79,7 +81,6 @@ header {
     font-size: 1.2em;
     text-decoration: none;
     border-top: 2px solid rgb(255, 255, 255);
-    /* border-left: 2px solid rgb(255, 255, 255); */
     padding: 5px;
 }
 
@@ -87,7 +88,6 @@ header {
 .visited {
     text-decoration: none;
     border-top: 3px solid rgb(78, 177, 186);
-    /* border-left: 3px solid rgb(78, 177, 186); */
     color: rgb(78, 177, 186);
 }
 
@@ -96,8 +96,8 @@ header {
 
 #navbar-toggle {
     position: absolute;
-    top: 0.625rem;
-    right: 1.25rem;
+    top: 0.625em;
+    right: 1.25em;
     cursor: pointer;
     color: rgba(255, 255, 255, 0.8);
     font-size: 2em;
@@ -115,7 +115,7 @@ header {
 
 .bg {
     background: linear-gradient( rgba(51, 102, 153, 0.8), rgba(0, 0, 0, 0.05)), url("../images/background.jpg");
-    height: 50%;
+    height: 70%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -123,17 +123,19 @@ header {
 
 #profile {
     margin: 0 auto;
+    padding-top: 20vh;
+    width: 70vw;
+    display: -webkit-flex;
     display: flex;
-    flex-direction: colurowmn;
-    width: 60%;
+    flex-direction: row;
 }
 
 #profile-img-box,
 #profile-text-box {
-    margin-top: 25%;
     flex: 1;
-    max-width: 50%;
-    min-height: 300px;
+    margin: 1em;
+    padding: 1em;
+    overflow: auto;
 }
 
 #profile-img-box {
@@ -144,12 +146,9 @@ header {
 }
 
 #profile-text-box {
-    margin-left: 1.2em;
     text-align: center;
-    padding-top: 2em;
     background-color: rgb(255, 255, 255, 0.9);
     font-size: 1.1em;
-    overflow: auto;
 }
 
 
@@ -159,7 +158,7 @@ header {
 /* ****************FOOTER SECTION START********************* */
 
 footer {
-    position: relative;
+    position: absolute;
     bottom: 0;
     width: 100%;
     height: 5rem;
@@ -206,6 +205,79 @@ footer {
         display: none;
     }
 }
+
+
+/* For devices with width of 480px and less, like phones */
+
+@media only screen and (max-width: 480px) {
+    #profile {
+        padding-top: 2vh;
+        width: 95vw;
+        flex-direction: column;
+    }
+    #profile-img-box {
+        min-height: 25vh;
+    }
+    #profile-text-box {
+        font-size: 1em;
+    }
+    #profile p {
+        padding: 0.5em;
+    }
+}
+
+
+/* For devices with width between 481px and 768px, like larger phones and portrait tablets */
+
+@media only screen and (min-width: 481px) {
+    #profile {
+        padding-top: 1vh;
+        width: 85vw;
+        flex-direction: column;
+    }
+    #profile-img-box {
+        min-height: 35vh;
+    }
+    #profile-text-box {
+        font-size: 1em;
+    }
+    #profile p {
+        padding: 0.5em;
+    }
+}
+
+
+/* For devices with width between 769px and 1279px, like landscape tablets and laptops */
+
+@media only screen and (min-width: 769px) {
+    #profile {
+        padding-top: 10vh;
+        width: 90vw;
+        flex-direction: row;
+    }
+    #profile p {
+        padding: 1em;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    #profile {
+        padding-top: 10vh;
+        width: 70vw;
+        flex-direction: row;
+    }
+    #profile-img-box {
+        min-height: 35vh;
+    }
+    #profile-text-box {
+        font-size: 1.1em;
+    }
+}
+
+
+/* For devices with width of 1280px and more, like desktop computers */
+
+@media only screen and (min-width: 1280px) {}
 
 
 /*************************** RESPONSIVE END*************************/
