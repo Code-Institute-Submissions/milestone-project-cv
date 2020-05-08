@@ -6,7 +6,7 @@ html {
 }
 
 main {
-    height: 100%;
+    height: 95%;
     position: relative;
     overflow: auto;
 }
@@ -158,7 +158,7 @@ header {
 /* ****************FOOTER SECTION START********************* */
 
 footer {
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
     height: 5rem;
@@ -210,6 +210,12 @@ footer {
 /* For devices with width of 480px and less, like phones */
 
 @media only screen and (max-width: 480px) {
+    .abreviation-logo {
+        display: inline;
+    }
+    .full-logo {
+        display: none;
+    }
     #profile {
         padding-top: 2vh;
         width: 95vw;
@@ -230,6 +236,12 @@ footer {
 /* For devices with width between 481px and 768px, like larger phones and portrait tablets */
 
 @media only screen and (min-width: 481px) {
+    .abreviation-logo {
+        display: none;
+    }
+    .full-logo {
+        display: inline;
+    }
     #profile {
         padding-top: 1vh;
         width: 85vw;
