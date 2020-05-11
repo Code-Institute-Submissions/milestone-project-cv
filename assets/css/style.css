@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 body,
 html {
@@ -6,9 +7,20 @@ html {
 }
 
 main {
-    height: 95%;
+    min-height: 88%;
     position: relative;
     overflow: auto;
+}
+
+
+/* ******************** FONTS / MARGINS/ TEXT  **************************** */
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.uppercase {
+    text-transform: uppercase;
 }
 
 h1,
@@ -16,7 +28,7 @@ h2,
 h3,
 h4 {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Righteous', cursive;
 }
 
 p {
@@ -31,14 +43,25 @@ p::first-letter {
     margin: 0 .2em 0 0;
 }
 
-h1 {
+a {
+    font-family: 'Righteous', cursive;
+}
+
+#logo {
     color: rgb(45, 60, 71);
     font-size: 2em;
-    letter-spacing: 0.1em;
+    text-shadow: 0 5px 5px rgba(0, 0, 0, .2), 0 6px 6px rgba(0, 0, 0, 0.15);
 }
 
 
-/********************** Background colour ***********************/
+/********************** background Colours ***********************/
+
+.bg {
+    background: linear-gradient( rgba(51, 102, 153, 0.8), rgba(0, 0, 0, 0.05)), url("../images/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .background-colour-gray {
     background-color: rgb(220, 220, 220);
@@ -47,6 +70,22 @@ h1 {
 .border-colour {
     border: 4px solid rgb(128, 128, 128);
     border-style: outset;
+}
+
+.f-logo-color {
+    color: rgb(59, 89, 152);
+}
+
+.in-logo-color {
+    color: rgb(14, 118, 168);
+}
+
+.git-logo-color {
+    color: rgb(33, 31, 31)
+}
+
+.pdf-logo-color {
+    color: rgb(255, 53, 0);
 }
 
 
@@ -68,26 +107,24 @@ header {
     list-style-type: none;
     display: none;
     flex-direction: column;
+    margin: 0;
 }
 
 #main-nav li {
     text-align: center;
     margin: 15px auto;
-    text-transform: capitalize;
 }
 
 .nav-links {
     color: rgb(255, 255, 255);
     font-size: 1.2em;
     text-decoration: none;
-    border-top: 2px solid rgb(255, 255, 255);
     padding: 5px;
 }
 
 .nav-links:hover,
 .visited {
     text-decoration: none;
-    border-top: 3px solid rgb(78, 177, 186);
     color: rgb(78, 177, 186);
 }
 
@@ -112,14 +149,6 @@ header {
 
 
 /* *************Profile section *** START ************/
-
-.bg {
-    background: linear-gradient( rgba(51, 102, 153, 0.8), rgba(0, 0, 0, 0.05)), url("../images/background.jpg");
-    height: 70%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 #profile {
     margin: 0 auto;
@@ -147,8 +176,14 @@ header {
 
 #profile-text-box {
     text-align: center;
-    background-color: rgb(255, 255, 255, 0.9);
-    font-size: 1.1em;
+    background-color: rgba(255, 255, 255, 0.9);
+    /* opacity: 0.9;
+    /* Opacity for Modern Browsers */
+    /* filter: alpha(opacity=90);
+    /* Opacity for IE8 and lower */
+    /* zoom: 1; */
+    /* Fix for IE7 */
+    /* font-size: 1.1em;  */
 }
 
 
@@ -161,12 +196,86 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-    height: 5rem;
+    min-height: 10%;
     margin: 0;
-    padding-top: 1.2rem;
+    padding-bottom: 1em;
     text-align: center;
-    background: linear-gradient( rgba(0, 0, 0, 0.55), rgba(51, 102, 153, 1.05));
+    background: rgb(51, 102, 153);
+    background: -moz-linear-gradient( rgb(128, 128, 128), rgb(51, 102, 153));
+    background: -webkit-linear-gradient( rgb(128, 128, 128), rgb(51, 102, 153));
+    background: -o-linear-gradient( rgb(128, 128, 128), rgb(51, 102, 153));
+    background: -ms-linear-gradient( rgb(128, 128, 128), rgb(51, 102, 153));
+    /* The code for linear gradient was taken from: */
+    /* https://stackoverflow.com/questions/4961651/does-ie9-support-css-linear-gradients */
+    /*For IE10*/
+    background: linear-gradient( rgb(128, 128, 128), rgb(51, 102, 153));
+    filter: progid: DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=rgb(128, 128, 128), endColorstr=rgb(51, 102, 153));
+    /*For IE7-8-9*/
     color: rgb(78, 177, 186);
+}
+
+#footer-links-box {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.2em;
+    padding: 0.5em;
+}
+
+#footer-links-box ul {
+    padding-left: 0;
+}
+
+#footer-links-box ul li {
+    list-style-type: none;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 2.7em;
+    height: 2.7em;
+    box-shadow: 0px 0px 20px rgb(51, 102, 153);
+    border-radius: 50%;
+    padding-top: 0.35em;
+    background-color: white;
+    vertical-align: middle;
+}
+
+#footer-links-box .facebook:hover,
+#footer-links-box a .fa-facebook:hover {
+    background-color: rgb(59, 89, 152);
+    color: rgb(255, 255, 255);
+    transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+
+#footer-links-box .linkedin:hover,
+#footer-links-box a .fa-linkedin:hover {
+    background-color: rgb(14, 118, 168);
+    color: rgb(255, 255, 255);
+    transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+
+#footer-links-box .github:hover,
+#footer-links-box a .fa-github:hover {
+    background-color: rgb(33, 31, 31);
+    color: rgb(255, 255, 255);
+    transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+
+#footer-links-box .cv-pdf:hover,
+#footer-links-box a .fa-file-pdf:hover {
+    background-color: rgb(33, 31, 31);
+    color: rgb(255, 255, 255);
+    transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
 }
 
 
@@ -177,6 +286,9 @@ footer {
 
 
 /************************* RESPONSIVE ***************************/
+
+
+/* Navigation  */
 
 @media screen and (min-width: 768px) {
     .navbar {
@@ -197,12 +309,17 @@ footer {
     }
     .nav-links {
         margin-left: 40px;
+        border-top: 2px solid rgb(255, 255, 255);
     }
     #logo {
         margin-top: 0;
     }
     #navbar-toggle {
         display: none;
+    }
+    .nav-links:hover,
+    .visited {
+        border-top: 3px solid rgb(78, 177, 186);
     }
 }
 
@@ -236,6 +353,9 @@ footer {
 /* For devices with width between 481px and 768px, like larger phones and portrait tablets */
 
 @media only screen and (min-width: 481px) {
+    #logo {
+        letter-spacing: 0.1em;
+    }
     .abreviation-logo {
         display: none;
     }
@@ -262,6 +382,9 @@ footer {
 /* For devices with width between 769px and 1279px, like landscape tablets and laptops */
 
 @media only screen and (min-width: 769px) {
+    #logo {
+        letter-spacing: 0.3em;
+    }
     #profile {
         padding-top: 10vh;
         width: 90vw;
@@ -289,7 +412,20 @@ footer {
 
 /* For devices with width of 1280px and more, like desktop computers */
 
-@media only screen and (min-width: 1280px) {}
+@media only screen and (min-width: 1280px) {
+    #profile {
+        padding-top: 15vh;
+        width: 60vw;
+        flex-direction: row;
+    }
+    #profile-img-box {
+        min-height: 50vh;
+    }
+    #profile-text-box {
+        padding-top: 5rem;
+        font-size: 1.3em;
+    }
+}
 
 
 /*************************** RESPONSIVE END*************************/

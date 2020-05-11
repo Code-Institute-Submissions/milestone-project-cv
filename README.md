@@ -1,39 +1,48 @@
+# Gediminas Valevicius Resume  
 <img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
 
-Welcome Gediminas Valevicius,
+## UX
+&nbsp;&nbsp;The Gediminas Valevicius Resume website was created as one of my assignments for Code Institute. I had an option to choose my own Idea for the project. <br>
+I tought that the resume website could be useful not only to show my skills and pass the test, but to use the website in the future for a potential employer. 
+<br><br>I thought about the resume as a tool for marketing myself, so I have to think of what would be interesting for my potential employees to know. How to sell myself.
+<br> I looked for a lot of different resume websites online in order to learn from the other developers what they would consider as main, important points to showcase. I think it is important to learn from other people too. 
+<br><br>&nbsp;&nbsp;During the research I found out that it is most important for the employee to know your skills, to what projects you have contributed or worked on your own and resume itself. So, I have decided that I am going to create a five-page website:
+*  Home Page – will be the main page.
+*  Resume Page – will show education/qualification along with work experience
+*  Projects Page – will display showcase all my projects.
+*  Skills Page – will show all my strongest skills.
+* Contact Page – will be used for contact form.
+  
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+### Home Page <br>
+&nbsp;&nbsp;The first page, home page I will dedicate as a short introduction about myself along with a picture. Like most good brands on the market it has its slogan which helps to sell, attract customers, so I have to sell myself with a short paragraph about who I am and what I do for a living. <br>
+&nbsp;&nbsp;Home Page’s header and footer, I am going to use for all other pages, so it will be created as a barebone for the entire website, only the content of the home page will be changed. In programming reusability is very important, because of simplicity to test and coding in general. 
+### Wireframes for each of the page on the site
+* [Home](https://wireframe.cc/pro/pp/0801205c0338940)
+Home page will be created as a bearbone for the entire wesite only its content will be changed in each of the pages 
+* [Resume](https://wireframe.cc/pro/pp/81eb5d3d3338950)
+* [Projects]()
+* [Skills](https://wireframe.cc/pro/pp/836bbaef8341165)
+* [Contacts]()
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
 
-A blue button should appear to click: *Make Public*,
+## Testing
+### Home Page testing.
+&nbsp;&nbsp;CSS, HTML codes I had tested using “validator.W3.org”. During the test I found only one warning in HTML, it recommended to use the h1 heading in article. CSS styling, I have passed with out of errors or warnings.
+During the testing on different browsers like Firefox, Chrome, Opera and Explorer I found out that Internet Explorer do not accept the background colour opacity with RGB colour coding as a fourth parameter. So, it ignores background colour with four parameters like:<br>
+&nbsp;&nbsp;Background-color: rgb(12,12,12, 0.5);<br>
+Instead it has to be written in rgba format. Like:<br>
+&nbsp;&nbsp;Background-color: rgba(12,12,12,0.5);<br>
+&nbsp;&nbsp;Another problem was that Internet Explorer do not accept a linear gradient value as a background colour. I found a code solution on Stack overflow:<br>
+( https://stackoverflow.com/questions/4961651/does-ie9-support-css-linear-gradients )<br>
+I did run a test on the Chrome browser, in an audit section. At first result wasn’t so good, but after some minor improvement I got very good result as you can see from the imgage down below. <br>
 
-Another blue button should appear to click: *Open Browser*.
+Inline-style: <br>
+![alt text](./assets/images/home-page-test-results.jpg "Logo Title Text 1")
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: *Make Public*,
 
-Another blue button should appear to click: *Open Browser*.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
 
-## Updates Since The Instructional Video
-
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
---------
-
-Happy coding!
