@@ -20,7 +20,6 @@ I tought that the resume website could be useful not only to show my skills and 
 ****
 ### Wireframes for each of the page on the site
 * [Home](https://wireframe.cc/pro/pp/0801205c0338940)
- Home page will be created as a bearbone for the entire wesite only its content will be changed in each of the pages 
 * [Resume](https://wireframe.cc/pro/pp/81eb5d3d3338950)
 * [Projects]()
 * [Skills](https://wireframe.cc/pro/pp/836bbaef8341165)

@@ -11,7 +11,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+
 </head>
 
 <body>
@@ -26,7 +29,7 @@
                     <div class="collapse navbar-collapse align-items-center" id="navbarResponsive">
                         <ul class="navbar-nav ml-auto align-items-center capitalize">
                             <li class="nav-item ">
-                                <a class="nav-link active" href="index.html">home</a>
+                                <a class="nav-link" href="index.html">home</a>
                             </li>
                             <li class="nav-item ">
                                 <a class="nav-link" href="resume.html">resume</a>
@@ -38,7 +41,7 @@
                                 <a class="nav-link" href="skills.html">skills</a>
                             </li>
 
-                            <li class="nav-item">
+                            <li class="nav-item active">
                                 <a class="nav-link" href="contact.html">contant</a>
                             </li>
                         </ul>
@@ -47,19 +50,66 @@
             </nav>
         </header>
 
-        <div class="bg">
-            <div id="profile">
-                <div id="profile-img-box" class="border-colour">
-                </div>
-                <article id="profile-text-box" class="border-colour">
-                    <h1 class="capitalize">gediminas valevicius</h1>
-                    <h2>Full stack web developer for hire.</h2>
-                    <p>A driven, ambitious and high-achieving BSc Computing graduate with an unequivocal passion to forging a successful career as a Full Stack Software Developer. Committed to applying good programming practices to design, code and build
-                        systems and software to improve stability, reliability and performance. </p>
-                </article>
-            </div>
 
-        </div>
+        <section class="contacts-section">
+
+            <div class="row text-center contact-heading">
+                <div class="col">
+                    <h3>Contact Details</h3>
+                </div>
+
+            </div>
+            <div class="row">
+
+
+                <div class="col-lg-6 col-md-6 col-sm-6 text-center">
+                    <ul id="contact-info" class="list-unstyled mb-0">
+                        <li><i class="fa fa-map-marker-alt fa-2x"></i>
+                            <p>Wicklow Town, FA67895, Ireland</p>
+                        </li>
+
+                        <li><i class="fa fa-phone mt-4 fa-2x"></i>
+                            <p>0857646370</p>
+                        </li>
+
+                        <li><i class="fa fa-envelope mt-4 fa-2x"></i>
+                            <p>gediminas.valevicius@outlook.com</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-6 ">
+                    <div class="row">
+                        <div class="col">
+                            <form id="contact-form" action="#">
+                                <div class="row">
+                                    <div class="col-md-6"><input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required /></div>
+                                    <div class="col-md-6"> <input type="email" name="email" id="fullname" class="form-control" placeholder="Email" required /></div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <textarea rows="5" name="message" id="message" class="form-control" placeholder="Please enter your message her..." required></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="row text-center">
+                                    <div class="col">
+                                        <button type="submit" class="btn btn-secondary btn-block">Send</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </section>
+
     </main>
     <footer>
         <div id="footer-links-box">
@@ -95,10 +145,10 @@
         <div>&copy;2020 by Gediminas Valevicius
         </div>
 
+        <script src="https://kit.fontawesome.com/abf4463467.js" crossorigin="anonymous"></script>
 
 
     </footer>
-    <script src="https://kit.fontawesome.com/abf4463467.js" crossorigin="anonymous"></script>
 
 </body>
 

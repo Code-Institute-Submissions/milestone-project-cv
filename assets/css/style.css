@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 body,
 html {
     height: 100%;
@@ -26,18 +27,23 @@ main {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
     margin: 0;
     font-family: 'Righteous', cursive;
 }
 
 p {
     font-family: 'Roboto', sans-serif;
+}
+
+#profile-text-box p {
     text-align: justify;
     padding: 2em;
 }
 
-p::first-letter {
+#profile-text-box p::first-letter {
     float: left;
     font-size: 2em;
     margin: 0 .2em 0 0;
@@ -50,7 +56,9 @@ a {
 #logo {
     color: rgb(45, 60, 71);
     font-size: 2em;
-    text-shadow: 0 5px 5px rgba(0, 0, 0, .2), 0 6px 6px rgba(0, 0, 0, 0.15);
+    font-weight: 900;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0), 6px 6px 6px rgba(0, 0, 0, .3), 7px 7px 7px rgba(0, 0, 0, 0.15);
+    font-family: 'Indie Flower', 'Righteous', cursive;
 }
 
 
@@ -103,46 +111,14 @@ header {
     font-size: 1.5em;
 }
 
-#main-nav {
-    list-style-type: none;
-    display: none;
-    flex-direction: column;
-    margin: 0;
-}
-
-#main-nav li {
-    text-align: center;
-    margin: 15px auto;
-}
-
-.nav-links {
+.nav-link {
     color: rgb(255, 255, 255);
-    font-size: 1.2em;
     text-decoration: none;
     padding: 5px;
 }
 
-.nav-links:hover,
-.visited {
-    text-decoration: none;
-    color: rgb(78, 177, 186);
-}
-
 
 /*****************************************  */
-
-#navbar-toggle {
-    position: absolute;
-    top: 0.625em;
-    right: 1.25em;
-    cursor: pointer;
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 2em;
-}
-
-#navbar-toggle:hover {
-    color: rgba(255, 255, 255, 1);
-}
 
 
 /************** Header/Navigation section **** END **************/
@@ -177,17 +153,80 @@ header {
 #profile-text-box {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.9);
-    /* opacity: 0.9;
-    /* Opacity for Modern Browsers */
-    /* filter: alpha(opacity=90);
-    /* Opacity for IE8 and lower */
-    /* zoom: 1; */
-    /* Fix for IE7 */
-    /* font-size: 1.1em;  */
 }
 
 
 /* *************Profile section END ************/
+
+
+/* *************** Resume section START************* */
+
+#resume-content {
+    margin: 0 auto;
+    width: 80%;
+    padding-top: 2rem;
+}
+
+#resume-content .timeline {
+    list-style-type: none;
+    position: relative;
+}
+
+#resume-content .timeline:before {
+    display: inline-block;
+    position: absolute;
+    content: ' ';
+    background: rgb(14, 118, 168, 0.1);
+    left: 1.7em;
+    width: 0.4em;
+    height: 100%;
+    z-index: 2;
+}
+
+#resume-content .timeline>li {
+    margin: 4rem 0;
+    padding-left: 0.5rem;
+}
+
+#resume-content .timeline>li:before {
+    display: inline-block;
+    position: absolute;
+    content: ' ';
+    background: rgb(14, 118, 168, 0.6);
+    border-radius: 50%;
+    border: 3px solid rgb(51, 102, 153);
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 2;
+}
+
+.timeline h6 {
+    display: inline-block;
+    color: rgb(14, 136, 240);
+    font-size: 1.2emem;
+}
+
+
+/* ************* Contact Section START ************/
+
+.contacts-section {
+    min-height: 80vh;
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.contacts-section .row {
+    margin-bottom: 0.5rem;
+}
+
+#contact-info i {
+    color: rgb(51, 102, 153);
+}
+
+
+/* ************* Contact Section END ************/
 
 
 /* ****************FOOTER SECTION START********************* */
@@ -288,45 +327,15 @@ footer {
 /************************* RESPONSIVE ***************************/
 
 
-/* Navigation  */
-
-@media screen and (min-width: 768px) {
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 0;
-        height: 70px;
-        align-items: center;
-    }
-    #main-nav {
-        display: flex !important;
-        margin-right: 30px;
-        flex-direction: row;
-        justify-content: flex-end;
-    }
-    #main-nav li {
-        margin: 0;
-    }
-    .nav-links {
-        margin-left: 40px;
-        border-top: 2px solid rgb(255, 255, 255);
-    }
-    #logo {
-        margin-top: 0;
-    }
-    #navbar-toggle {
-        display: none;
-    }
-    .nav-links:hover,
-    .visited {
-        border-top: 3px solid rgb(78, 177, 186);
-    }
-}
-
-
 /* For devices with width of 480px and less, like phones */
 
 @media only screen and (max-width: 480px) {
+    #contact-info li i {
+        font-size: 1em;
+    }
+    #contact-info li p {
+        font-size: 0.8em;
+    }
     .abreviation-logo {
         display: inline;
     }
@@ -352,9 +361,28 @@ footer {
 
 /* For devices with width between 481px and 768px, like larger phones and portrait tablets */
 
+@media (orientation: landscape) {
+    #contact-info li i {
+        font-size: 1em;
+    }
+    #contact-info li p {
+        font-size: 0.8em;
+    }
+}
+
 @media only screen and (min-width: 481px) {
+    #contact-info li i {
+        font-size: 1.1em;
+    }
+    #contact-info li p {
+        font-size: 0.8em;
+    }
+    .nav-link {
+        font-size: 1.2em;
+    }
     #logo {
         letter-spacing: 0.1em;
+        font-size: 1.2em;
     }
     .abreviation-logo {
         display: none;
@@ -382,8 +410,12 @@ footer {
 /* For devices with width between 769px and 1279px, like landscape tablets and laptops */
 
 @media only screen and (min-width: 769px) {
+    .nav-link {
+        font-size: 1.3em;
+    }
     #logo {
-        letter-spacing: 0.3em;
+        letter-spacing: 0.2em;
+        font-size: 1.4em;
     }
     #profile {
         padding-top: 10vh;
@@ -393,9 +425,18 @@ footer {
     #profile p {
         padding: 1em;
     }
+    .contact-heading h3 {
+        font-size: 2em;
+    }
+    .contact-heading {
+        padding: 2.5rem;
+    }
 }
 
 @media only screen and (min-width: 900px) {
+    #logo {
+        font-size: 1.8em;
+    }
     #profile {
         padding-top: 10vh;
         width: 70vw;
@@ -407,12 +448,18 @@ footer {
     #profile-text-box {
         font-size: 1.1em;
     }
+    .contact-heading h3 {
+        font-size: 2.5em;
+    }
 }
 
 
 /* For devices with width of 1280px and more, like desktop computers */
 
 @media only screen and (min-width: 1280px) {
+    #logo {
+        font-size: 2em;
+    }
     #profile {
         padding-top: 15vh;
         width: 60vw;
@@ -424,6 +471,9 @@ footer {
     #profile-text-box {
         padding-top: 5rem;
         font-size: 1.3em;
+    }
+    .contact-heading h3 {
+        font-size: 3em;
     }
 }
 
