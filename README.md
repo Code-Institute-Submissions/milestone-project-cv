@@ -45,6 +45,12 @@ I did run a test on the Chrome browser, in an audit section. At first result was
 Test result: <br>
 ![alt text](./assets/images/home-page-test-results.jpg "Logo Title Text 1")
 
+## Images Reference
+
+The home image, background image was taken from:<br>
+[click to see](https://pixabay.com/images/search/)<br>
+Programing images where taken from :<br>
+[click to see](https://www.pngfuel.com/search?q=programming+Languages)
 
 
 

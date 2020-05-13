@@ -221,8 +221,9 @@ header {
     margin-bottom: 0.5rem;
 }
 
-#contact-info i {
-    color: rgb(51, 102, 153);
+#contact-info li img {
+    width: 2em;
+    height: 2em;
 }
 
 
@@ -330,9 +331,6 @@ footer {
 /* For devices with width of 480px and less, like phones */
 
 @media only screen and (max-width: 480px) {
-    #contact-info li i {
-        font-size: 1em;
-    }
     #contact-info li p {
         font-size: 0.8em;
     }
@@ -362,18 +360,12 @@ footer {
 /* For devices with width between 481px and 768px, like larger phones and portrait tablets */
 
 @media (orientation: landscape) {
-    #contact-info li i {
-        font-size: 1em;
-    }
     #contact-info li p {
         font-size: 0.8em;
     }
 }
 
 @media only screen and (min-width: 481px) {
-    #contact-info li i {
-        font-size: 1.1em;
-    }
     #contact-info li p {
         font-size: 0.8em;
     }
