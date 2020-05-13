@@ -21,9 +21,9 @@ I tought that the resume website could be useful not only to show my skills and 
 ### Wireframes for each of the page on the site
 * [Home](https://wireframe.cc/pro/pp/0801205c0338940)
 * [Resume](https://wireframe.cc/pro/pp/81eb5d3d3338950)
-* [Projects]()
+* [Projects](https://wireframe.cc/pro/pp/f7029f065342644)
 * [Skills](https://wireframe.cc/pro/pp/836bbaef8341165)
-* [Contacts]()
+* [Contacts](https://wireframe.cc/pro/pp/ac20b1579342638)
 
 ****
 ## Features Left to Implement

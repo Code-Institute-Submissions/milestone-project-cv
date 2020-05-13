@@ -195,9 +195,9 @@ header {
     background: rgb(14, 118, 168, 0.6);
     border-radius: 50%;
     border: 3px solid rgb(51, 102, 153);
-    left: 20px;
-    width: 20px;
-    height: 20px;
+    left: 1em;
+    width: 1.5em;
+    height: 1.5em;
     z-index: 2;
 }
 
