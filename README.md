@@ -16,14 +16,25 @@ I tought that the resume website could be useful not only to show my skills and 
 ****
 ### Home Page <br>
 &nbsp;&nbsp;The first page, home page I will dedicate as a short introduction about myself along with a picture. Like most good brands on the market it has its slogan which helps to sell, attract customers, so I have to sell myself with a short paragraph about who I am and what I do for a living. <br>
-&nbsp;&nbsp;Home Page’s header and footer, I am going to use for all other pages, so it will be created as a barebone for the entire website, only the content of the home page will be changed. In programming reusability is very important, because of simplicity to test and coding in general. 
+&nbsp;&nbsp;Home Page’s header and footer, I am going to use for all other pages, so it will be created as a barebone for the entire website, only the content of the home page will be changed. In programming reusability is very important, because of simplicity to test and coding in general. <br>
+
 ****
+
+### Resume Page <br>
+&nbsp;&nbsp;The home page was created using only HTML, CSS and my own JS in order to show my coding skills. For all other website pages, I thought I will be using bootstrap, so all other pages suppose to use bootstrap except the home page. Once I started using bootstrap I noted that alignment of my navigation bar is different comparing home page with all other, so I changed my own version of navigation bar to bootstrap. It was quicker to create new comparing with looking for conflicts.<br><br>
+&nbsp;&nbsp;The resume page I decided to use for showcasing my Education and Experience.  I think the best way to display such an information would be timelines. I found two potential sources on how to build timelines. One of which W3schools and another one is the bootstrap documentation.   
 ### Wireframes for each of the page on the site
 * [Home](https://wireframe.cc/pro/pp/0801205c0338940)
 * [Resume](https://wireframe.cc/pro/pp/81eb5d3d3338950)
 * [Projects](https://wireframe.cc/pro/pp/f7029f065342644)
 * [Skills](https://wireframe.cc/pro/pp/836bbaef8341165)
 * [Contacts](https://wireframe.cc/pro/pp/ac20b1579342638)
+
+****
+### User stories
+[Navigation Button](https://miro.com/app/board/o9J_ksemU64=/)
+<br>
+[Footer Icons](https://miro.com/app/board/o9J_ksemFzo=/)
 
 ****
 ## Features Left to Implement
@@ -42,15 +53,23 @@ Instead it has to be written in rgba format. Like:<br>
 ( https://stackoverflow.com/questions/4961651/does-ie9-support-css-linear-gradients )<br>
 I did run a test on the Chrome browser, in an audit section. At first result wasn’t so good, but after some minor improvement I got very good result as you can see from the imgage down below. <br>
 
-Test result: <br>
-![alt text](./assets/images/home-page-test-results.jpg "Logo Title Text 1")
+Test result: <br> <br>
+![alt text](./assets/images/home-page-test-results.jpg "Home page test result image")
 
+****
+### Resume Page testing.
+
+&nbsp;&nbsp;During the resume web page testing, I had discovered that the “Best Practice” parameter is very poor because the image sizing. As you can see from the images below.<br>
+![alt text](./assets/images/image-resizing-problem.jpg "Resume page poor best practices parameter image") <br>
+![alt text](./assets/images/resume-failing-best-practices.jpg "Resume page poor best practices parameter image") <br>
+&nbsp;&nbsp;I decided to resize the image to the required size, it would improve page rendering speed and the best practice parameter. As you can see from the image below the test result was improved.<br><br>
+![alt text](./assets/images/resume-test-result.jpg "Resume page poor best practices parameter image")
 ## Images Reference
 
 The home image, background image was taken from:<br>
-[click to see](https://pixabay.com/images/search/)<br>
+(https://pixabay.com/images/search/)<br>
 Programing images where taken from :<br>
-[click to see](https://www.pngfuel.com/search?q=programming+Languages)
+(https://www.pngfuel.com/search?q=programming+Languages)
 
 
 

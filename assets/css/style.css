@@ -36,17 +36,7 @@ h6 {
 
 p {
     font-family: 'Roboto', sans-serif;
-}
-
-#profile-text-box p {
     text-align: justify;
-    padding: 2em;
-}
-
-#profile-text-box p::first-letter {
-    float: left;
-    font-size: 2em;
-    margin: 0 .2em 0 0;
 }
 
 a {
@@ -61,8 +51,13 @@ a {
     font-family: 'Indie Flower', 'Righteous', cursive;
 }
 
+.align-content-center {
+    margin: 0 auto;
+    min-height: 80vh;
+}
 
-/********************** background Colours ***********************/
+
+/********************** Colours ***********************/
 
 .bg {
     background: linear-gradient( rgba(51, 102, 153, 0.8), rgba(0, 0, 0, 0.05)), url("../images/background.jpg");
@@ -96,6 +91,10 @@ a {
     color: rgb(255, 53, 0);
 }
 
+.page-heading {
+    text-shadow: 5px 5px 5px rgba(0, 0, 0), 6px 6px 6px rgba(0, 0, 0, .3), 7px 7px 7px rgba(0, 0, 0, 0.15);
+}
+
 
 /************** Header/Navigation section **** START **************/
 
@@ -127,9 +126,7 @@ header {
 /* *************Profile section *** START ************/
 
 #profile {
-    margin: 0 auto;
     padding-top: 20vh;
-    width: 70vw;
     display: -webkit-flex;
     display: flex;
     flex-direction: row;
@@ -155,6 +152,16 @@ header {
     background-color: rgba(255, 255, 255, 0.9);
 }
 
+#profile-text-box p {
+    padding: 2em;
+}
+
+#profile-text-box p::first-letter {
+    float: left;
+    font-size: 2em;
+    margin: 0 .2em 0 0;
+}
+
 
 /* *************Profile section END ************/
 
@@ -162,8 +169,6 @@ header {
 /* *************** Resume section START************* */
 
 #resume-content {
-    margin: 0 auto;
-    width: 80%;
     padding-top: 2rem;
 }
 
@@ -201,6 +206,17 @@ header {
     z-index: 2;
 }
 
+#resume-content h3 img {
+    /* width: 2em;
+    height: 1.5em; */
+    margin-right: 1em;
+}
+
+#resume-content .page-heading {
+    border-bottom: 1px dashed rgb(128, 128, 128);
+    margin-bottom: 1em;
+}
+
 .timeline h6 {
     display: inline-block;
     color: rgb(14, 136, 240);
@@ -208,12 +224,15 @@ header {
 }
 
 
+/* *************************** PROJECTS PAGE START **************************** */
+
+
+/* PROJECTS PAGE END */
+
+
 /* ************* Contact Section START ************/
 
 .contacts-section {
-    min-height: 80vh;
-    width: 70%;
-    margin: 0 auto;
     padding-top: 20px;
 }
 
@@ -327,10 +346,19 @@ footer {
 
 /************************* RESPONSIVE ***************************/
 
+@media (orientation: landscape) {
+    #contact-info li p {
+        font-size: 0.8em;
+    }
+}
+
 
 /* For devices with width of 480px and less, like phones */
 
 @media only screen and (max-width: 480px) {
+    .align-content-center {
+        width: 90vw;
+    }
     #contact-info li p {
         font-size: 0.8em;
     }
@@ -357,15 +385,12 @@ footer {
 }
 
 
-/* For devices with width between 481px and 768px, like larger phones and portrait tablets */
-
-@media (orientation: landscape) {
-    #contact-info li p {
-        font-size: 0.8em;
-    }
-}
+/* Width between 481px and 768px, like larger phones and portrait tablets */
 
 @media only screen and (min-width: 481px) {
+    .align-content-center {
+        width: 85vw;
+    }
     #contact-info li p {
         font-size: 0.8em;
     }
@@ -384,7 +409,6 @@ footer {
     }
     #profile {
         padding-top: 1vh;
-        width: 85vw;
         flex-direction: column;
     }
     #profile-img-box {
@@ -402,6 +426,9 @@ footer {
 /* For devices with width between 769px and 1279px, like landscape tablets and laptops */
 
 @media only screen and (min-width: 769px) {
+    .align-content-center {
+        width: 75vw;
+    }
     .nav-link {
         font-size: 1.3em;
     }
@@ -411,27 +438,28 @@ footer {
     }
     #profile {
         padding-top: 10vh;
-        width: 90vw;
         flex-direction: row;
     }
     #profile p {
         padding: 1em;
     }
-    .contact-heading h3 {
+    .page-heading h3 {
         font-size: 2em;
     }
-    .contact-heading {
-        padding: 2.5rem;
+    .page-heading {
+        padding: 2.rem;
     }
 }
 
 @media only screen and (min-width: 900px) {
+    .align-content-center {
+        width: 70vw;
+    }
     #logo {
         font-size: 1.8em;
     }
     #profile {
         padding-top: 10vh;
-        width: 70vw;
         flex-direction: row;
     }
     #profile-img-box {
@@ -440,7 +468,7 @@ footer {
     #profile-text-box {
         font-size: 1.1em;
     }
-    .contact-heading h3 {
+    .page-heading h3 {
         font-size: 2.5em;
     }
 }
@@ -454,7 +482,6 @@ footer {
     }
     #profile {
         padding-top: 15vh;
-        width: 60vw;
         flex-direction: row;
     }
     #profile-img-box {
@@ -464,7 +491,7 @@ footer {
         padding-top: 5rem;
         font-size: 1.3em;
     }
-    .contact-heading h3 {
+    .page-heading h3 {
         font-size: 3em;
     }
 }
