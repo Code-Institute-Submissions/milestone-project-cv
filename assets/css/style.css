@@ -181,7 +181,7 @@ header {
     display: inline-block;
     position: absolute;
     content: ' ';
-    background: rgb(14, 118, 168, 0.1);
+    background: rgba(14, 118, 168, 0.1);
     left: 1.7em;
     width: 0.4em;
     height: 100%;
@@ -197,7 +197,7 @@ header {
     display: inline-block;
     position: absolute;
     content: ' ';
-    background: rgb(14, 118, 168, 0.6);
+    background: rgba(14, 118, 168, 0.6);
     border-radius: 50%;
     border: 3px solid rgb(51, 102, 153);
     left: 1em;
