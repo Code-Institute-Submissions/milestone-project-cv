@@ -141,7 +141,7 @@ header {
 }
 
 #profile-img-box {
-    background-image: url(../images/gediminas-ConvertImage.jpg);
+    background-image: url(../images/gediminas.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -226,6 +226,28 @@ header {
 
 /* *************************** PROJECTS PAGE START **************************** */
 
+.carousel-inner img {
+    position: relative;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    min-height: 24vh;
+    margin: 0 auto;
+}
+
+.carousel-caption {
+    position: relative;
+    left: auto;
+    right: auto;
+    min-height: 28vh;
+    background-color: grey;
+    margin-top: 2em;
+}
+
+.carousel-caption p {
+    padding: 2em 4em 0 4em;
+}
+
 
 /* PROJECTS PAGE END */
 
@@ -243,6 +265,10 @@ header {
 #contact-info li img {
     width: 2em;
     height: 2em;
+}
+
+#contact-info p {
+    text-align: center;
 }
 
 
@@ -445,9 +471,6 @@ footer {
     }
     .page-heading h3 {
         font-size: 2em;
-    }
-    .page-heading {
-        padding: 2.rem;
     }
 }
 
