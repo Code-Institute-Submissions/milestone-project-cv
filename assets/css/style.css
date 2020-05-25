@@ -252,6 +252,31 @@ header {
 /* PROJECTS PAGE END */
 
 
+/* SILLS PAGE START */
+
+.progress {
+    height: 2em;
+}
+
+#additional-skills li {
+    display: inline;
+    padding: 2em 1em 0 0;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.skills-subheading {
+    padding-bottom: 2em;
+}
+
+#achievements-row ul {
+    list-style-image: url('../images/done.png');
+}
+
+
+/* SILLS PAGE END */
+
+
 /* ************* Contact Section START ************/
 
 .contacts-section {
@@ -370,7 +395,7 @@ footer {
 /*  */
 
 
-/************************* RESPONSIVE ***************************/
+/************************* RESPONSIVE */
 
 @media (orientation: landscape) {
     #contact-info li p {
@@ -407,6 +432,10 @@ footer {
     }
     #profile p {
         padding: 0.5em;
+    }
+    .progress-bar-h {
+        text-align: center;
+        font-size: 1em;
     }
 }
 
@@ -446,6 +475,10 @@ footer {
     #profile p {
         padding: 0.5em;
     }
+    .progress-bar-h {
+        text-align: center;
+        font-size: 1.1em;
+    }
 }
 
 
@@ -472,6 +505,10 @@ footer {
     .page-heading h3 {
         font-size: 2em;
     }
+    .progress-bar-h {
+        text-align: right;
+        font-size: 1.2em;
+    }
 }
 
 @media only screen and (min-width: 900px) {
@@ -490,9 +527,6 @@ footer {
     }
     #profile-text-box {
         font-size: 1.1em;
-    }
-    .page-heading h3 {
-        font-size: 2.5em;
     }
 }
 
