@@ -47,7 +47,7 @@ a {
     color: rgb(45, 60, 71);
     font-size: 2em;
     font-weight: 900;
-    text-shadow: 5px 5px 5px rgba(0, 0, 0), 6px 6px 6px rgba(0, 0, 0, .3), 7px 7px 7px rgba(0, 0, 0, 0.15);
+    text-shadow: 5px 5px 5px rgb(0, 0, 0), 6px 6px 6px rgba(0, 0, 0, .3), 7px 7px 7px rgba(0, 0, 0, 0.15);
     font-family: 'Indie Flower', 'Righteous', cursive;
 }
 
@@ -92,7 +92,7 @@ a {
 }
 
 .page-heading {
-    text-shadow: 5px 5px 5px rgba(0, 0, 0), 6px 6px 6px rgba(0, 0, 0, .3), 7px 7px 7px rgba(0, 0, 0, 0.15);
+    text-shadow: 5px 5px 5px rgb(0, 0, 0), 6px 6px 6px rgba(0, 0, 0, .3), 7px 7px 7px rgba(0, 0, 0, 0.15);
 }
 
 
