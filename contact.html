@@ -44,20 +44,39 @@
                 </div>
             </nav>
         </header>
-        <section class="contacts-section align-content-center">
+        <section id="contacts-section" class="container-fluid align-content-center">
             <div class="row text-center page-heading">
-                <div class="col py-5">
+                <div class="col py-4">
                     <h3 class="text-white">Contact Details</h3>
                 </div>
             </div>
 
+
             <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 ">
+                    <form id="contact-form" action="#">
+                        <div class="row">
+                            <div class="col-md-6"><input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required /></div>
+                            <div class="col-md-6"> <input type="email" name="email" id="email" class="form-control" placeholder="Email" required /></div>
+                        </div>
 
+                        <div class="row">
+                            <div class="col">
+                                <textarea rows="5" name="message" id="message" class="form-control" placeholder="Please enter your message her..." required></textarea>
+                            </div>
+                        </div>
 
-                <div class="col-lg-6 col-md-6 col-sm-6 text-center">
-                    <ul id="contact-info" class="list-unstyled mb-0">
+                        <div class="row text-center">
+                            <div class="col">
+                                <button type="submit" class="btn btn-secondary btn-block">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div id="contact-info" class="col-lg-6 col-md-6 col-sm-6">
+                    <ul class="list-unstyled mb-0 text-center">
                         <li><img src="./assets/images/navigation.png" alt="Navigation logo">
-                            <p>Wicklow Town, FA67895, Ireland</p>
+                            <p class="text-center">Wicklow Town, FA67895, Ireland</p>
                         </li>
 
                         <li><img src="./assets/images/phone-logo.png" alt="Phone logo">
@@ -69,76 +88,35 @@
                         </li>
                     </ul>
                 </div>
-
-                <div class="col-lg-6 col-md-6 col-sm-6 ">
-                    <div class="row">
-                        <div class="col">
-                            <form id="contact-form" action="#">
-                                <div class="row">
-                                    <div class="col-md-6"><input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required /></div>
-                                    <div class="col-md-6"> <input type="email" name="email" id="email" class="form-control" placeholder="Email" required /></div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col">
-                                        <textarea rows="5" name="message" id="message" class="form-control" placeholder="Please enter your message her..." required></textarea>
-                                    </div>
-                                </div>
-
-                                <div class="row text-center">
-                                    <div class="col">
-                                        <button type="submit" class="btn btn-secondary btn-block">Send</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Calendly badge widget begin -->
-                <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-                <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
-                <script type="text/javascript">
-                    Calendly.initBadgeWidget({
-                        url: 'https://calendly.com/gediminas-valevicius/15min',
-                        text: 'Schedule time with me',
-                        color: '#00a2ff',
-                        textColor: '#ffffff',
-                        branding: true
-                    });
-                </script>
-                <!-- Calendly badge widget end -->
-
-
-
             </div>
         </section>
 
     </main>
     <footer>
         <div id="footer-links-box">
-
             <ul>
-                <li class="facebook">
+                <li id="facebook">
                     <a target="_blank" rel="noreferrer" href="https://www.facebook.com/gvalevicius/">
+                        <!-- (noopener) will prevent webpage to be accessed by the window.opener and makes sure it runs in a separate process.
+                             (noreferrer) headers prevents the destination site from seeing what URL the user came from. It shows to google analytics a direct trafic. It is used for external links.-->
                         <i class="fa fa-facebook fa-2x f-logo-color" aria-hidden="true"></i>
                         <span class="sr-only">Facebook</span>
                     </a>
                 </li>
-                <li class="linkedin">
+                <li id="linkedin">
                     <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/gediminas-valevicius-7b523180">
                         <i class="fa fa-linkedin fa-2x in-logo-color" aria-hidden="true"></i>
                         <span class="sr-only">LinkedIn</span>
                     </a>
                 </li>
 
-                <li class="github">
+                <li id="github">
                     <a target="_blank" rel="noreferrer" href="https://github.com/GediminasValevicius/milestone-project-cv">
                         <i class="fa fa-github fa-2x git-logo-color"></i>
                         <span class="sr-only">Git hub</span>
                     </a>
                 </li>
-                <li class="cv-pdf">
+                <li id="cv-pdf">
                     <a href="./assets/documents/resume.pdf" target="_blank">
                         <i class="fa fa-file-pdf-o fa-2x pdf-logo-color"></i>
                         <span class="sr-only">Download Link</span>
@@ -148,11 +126,24 @@
         </div>
         <div>&copy;2020 by Gediminas Valevicius
         </div>
-        <script src="https://kit.fontawesome.com/abf4463467.js" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </footer>
+    <!-- Calendly badge widget begin -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        Calendly.initBadgeWidget({
+            url: 'https://calendly.com/gediminas-valevicius/15min',
+            text: 'Call scheduler',
+            color: '#00a2ff',
+            textColor: '#ffffff',
+            branding: false
+        });
+    </script>
+    <!-- Calendly badge widget end -->
+    <script src="https://kit.fontawesome.com/abf4463467.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -207,8 +207,6 @@ header {
 }
 
 #resume-content h3 img {
-    /* width: 2em;
-    height: 1.5em; */
     margin-right: 1em;
 }
 
@@ -226,36 +224,35 @@ header {
 
 /* *************************** PROJECTS PAGE START **************************** */
 
-.carousel-inner img {
-    position: relative;
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    min-height: 24vh;
-    margin: 0 auto;
+.card img {
+    object-fit: contain;
+    max-height: 8em;
+    padding: 1em;
+    background-color: rgb(51, 102, 153);
 }
 
-.carousel-caption {
-    position: relative;
-    left: auto;
-    right: auto;
-    min-height: 28vh;
-    background-color: grey;
-    margin-top: 2em;
+.card-header {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: rgb(51, 102, 153);
 }
 
-.carousel-caption p {
-    padding: 2em 4em 0 4em;
+#projects-section {
+    padding-bottom: 2em;
 }
 
 
 /* PROJECTS PAGE END */
 
 
-/* SILLS PAGE START */
+/* SKILLS PAGE START */
 
 .progress {
     height: 2em;
+}
+
+.progress-bar {
+    background-color: rgb(51, 102, 153);
 }
 
 #additional-skills li {
@@ -274,20 +271,24 @@ header {
 }
 
 
-/* SILLS PAGE END */
+/* SKILLS PAGE END */
 
 
 /* ************* Contact Section START ************/
 
-.contacts-section {
-    padding-top: 20px;
+#contacts-section .row {
+    margin-bottom: 1rem;
 }
 
-.contacts-section .row {
-    margin-bottom: 0.5rem;
+#contact-form button {
+    background-color: rgb(51, 102, 153);
 }
 
-#contact-info li img {
+#contact-form button:hover {
+    background-color: rgba(51, 102, 153, 0.8);
+}
+
+#contact-info img {
     width: 2em;
     height: 2em;
 }
@@ -311,16 +312,6 @@ footer {
     padding-bottom: 1em;
     text-align: center;
     background: rgb(51, 102, 153);
-    background: -moz-linear-gradient( rgb(128, 128, 128), rgb(51, 102, 153));
-    background: -webkit-linear-gradient( rgb(128, 128, 128), rgb(51, 102, 153));
-    background: -o-linear-gradient( rgb(128, 128, 128), rgb(51, 102, 153));
-    background: -ms-linear-gradient( rgb(128, 128, 128), rgb(51, 102, 153));
-    /* The code for linear gradient was taken from: */
-    /* https://stackoverflow.com/questions/4961651/does-ie9-support-css-linear-gradients */
-    /*For IE10*/
-    background: linear-gradient( rgb(128, 128, 128), rgb(51, 102, 153));
-    filter: progid: DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=rgb(128, 128, 128), endColorstr=rgb(51, 102, 153));
-    /*For IE7-8-9*/
     color: rgb(78, 177, 186);
 }
 
@@ -341,14 +332,15 @@ footer {
     box-sizing: border-box;
     width: 2.7em;
     height: 2.7em;
-    box-shadow: 0px 0px 20px rgb(51, 102, 153);
+    /* box-shadow: 0px 0px 20px rgb(51, 102, 153); */
     border-radius: 50%;
     padding-top: 0.35em;
     background-color: white;
     vertical-align: middle;
 }
 
-#footer-links-box .facebook:hover,
+#facebook:hover,
+#facebook:hover a .fa-facebook,
 #footer-links-box a .fa-facebook:hover {
     background-color: rgb(59, 89, 152);
     color: rgb(255, 255, 255);
@@ -358,7 +350,8 @@ footer {
     -o-transition: all 0.4s ease-in-out;
 }
 
-#footer-links-box .linkedin:hover,
+#linkedin:hover,
+#linkedin:hover a .fa-linkedin,
 #footer-links-box a .fa-linkedin:hover {
     background-color: rgb(14, 118, 168);
     color: rgb(255, 255, 255);
@@ -368,7 +361,8 @@ footer {
     -o-transition: all 0.4s ease-in-out;
 }
 
-#footer-links-box .github:hover,
+#github:hover,
+#github:hover a .fa-github,
 #footer-links-box a .fa-github:hover {
     background-color: rgb(33, 31, 31);
     color: rgb(255, 255, 255);
@@ -378,7 +372,8 @@ footer {
     -o-transition: all 0.4s ease-in-out;
 }
 
-#footer-links-box .cv-pdf:hover,
+#cv-pdf:hover,
+#cv-pdf:hover a .fa-file-pdf,
 #footer-links-box a .fa-file-pdf:hover {
     background-color: rgb(33, 31, 31);
     color: rgb(255, 255, 255);
@@ -509,6 +504,10 @@ footer {
         text-align: right;
         font-size: 1.2em;
     }
+    #contact-form,
+    #contact-info {
+        padding-top: 3em;
+    }
 }
 
 @media only screen and (min-width: 900px) {
@@ -527,6 +526,10 @@ footer {
     }
     #profile-text-box {
         font-size: 1.1em;
+    }
+    #contact-form,
+    #contact-info {
+        padding-top: 4em;
     }
 }
 
@@ -550,6 +553,10 @@ footer {
     }
     .page-heading h3 {
         font-size: 3em;
+    }
+    #contact-form,
+    #contact-info {
+        padding-top: 5em;
     }
 }
 

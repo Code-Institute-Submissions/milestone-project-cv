@@ -46,16 +46,15 @@
         </header>
 
 
-        <section class="align-content-center">
+        <section class="container-fluid align-content-center">
             <div class="row text-center page-heading">
-                <div class="col py-5">
+                <div class="col py-4">
                     <h3 class="text-white">Skills</h3>
                 </div>
+
             </div>
             <div class="row">
                 <div class="col">
-
-
                     <!-- mb-1 adds margin at the bottom of the progress bar row -->
                     <div class="row mb-1">
                         <div class="col-lg-2 col-md-2 col-sm-2">
@@ -202,26 +201,28 @@
     <footer>
         <div id="footer-links-box">
             <ul>
-                <li class="facebook">
+                <li id="facebook">
                     <a target="_blank" rel="noreferrer" href="https://www.facebook.com/gvalevicius/">
+                        <!-- (noopener) will prevent webpage to be accessed by the window.opener and makes sure it runs in a separate process.
+                             (noreferrer) headers prevents the destination site from seeing what URL the user came from. It shows to google analytics a direct trafic. It is used for external links.-->
                         <i class="fa fa-facebook fa-2x f-logo-color" aria-hidden="true"></i>
                         <span class="sr-only">Facebook</span>
                     </a>
                 </li>
-                <li class="linkedin">
+                <li id="linkedin">
                     <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/gediminas-valevicius-7b523180">
                         <i class="fa fa-linkedin fa-2x in-logo-color" aria-hidden="true"></i>
                         <span class="sr-only">LinkedIn</span>
                     </a>
                 </li>
 
-                <li class="github">
+                <li id="github">
                     <a target="_blank" rel="noreferrer" href="https://github.com/GediminasValevicius/milestone-project-cv">
                         <i class="fa fa-github fa-2x git-logo-color"></i>
                         <span class="sr-only">Git hub</span>
                     </a>
                 </li>
-                <li class="cv-pdf">
+                <li id="cv-pdf">
                     <a href="./assets/documents/resume.pdf" target="_blank">
                         <i class="fa fa-file-pdf-o fa-2x pdf-logo-color"></i>
                         <span class="sr-only">Download Link</span>
