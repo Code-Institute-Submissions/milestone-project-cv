@@ -58,8 +58,7 @@ I thought that the resume website could be useful not only to show my skills and
 <br>
 
 ### Contact Page <br>
-&nbsp;&nbsp; The contact page will be dedicated to a contact form and contact details. The contact form will be created using bootstrap and bootstrap javascript validation. The page will allow the potential employer to find contact details like phone number, my email address or the location where I am living. As well as that the user of my webpage will have an oportunity to contact me by using contact form and book a phone call if he needs.
-<br>
+&nbsp;&nbsp; The contact page will be dedicated to a contact form and contact details. The contact form will be created using bootstrap and bootstrap javascript validation. The page will allow the potential employer to find contact details like phone number, my email address or the location where I am living. As well as that the user of my webpage will have an oportunity to contact me by using contact form and book a phone call if he needs.<br>
 
 ****
 
@@ -223,10 +222,10 @@ Test result: <br> <br>
 ### Resume Page testing. <br>
 &nbsp;&nbsp;The home page was created using only HTML, CSS and my own JS in order to show my coding skills. For all the other website pages, I thought I would be using Bootstrap, so all the other pages were supposed to use Bootstrap except the home page. Once I started using Bootstrap I noted that the alignment of my navigation bar was different comparing to the home page, so I changed my own version of the navigation bar to Bootstrap. So my final decision was to use Bootstrap navigatioin bar for all of the web pages.<br>
 &nbsp;&nbsp;During the resume web page testing, I had discovered that the “Best Practice” parameter is very poor because of the image sizing. As you can see from the images below.<br>
-![alt text](./assets/images/image-resizing-problem.jpg "Resume page image alignment problems") <br>
-![alt text](./assets/images/resume-failing-best-practices.jpg "Resume page poor best practices parameter image") <br>
+![alt text](./assets/images/resizing-problem.jpg "Resume page image alignment problems") <br>
+![alt text](./assets/images/resume-f-best-practices.jpg "Resume page poor best practices parameter image") <br>
 &nbsp;&nbsp;I decided to resize the image to the required size, it would improve page rendering speed and the best practice parameter. As you can see from the image below the test result was improved.<br><br>
-![alt text](./assets/images/resume-test-result.jpg "Resume page final test image")
+![alt text](./assets/images/resume-test.jpg "Resume page final test image")
 <br>&nbsp;Html Checker didn't found any errors : Document checking completed. No errors or warnings to show.<br>
 
 ****
