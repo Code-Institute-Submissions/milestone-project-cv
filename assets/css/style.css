@@ -281,6 +281,23 @@ header {
     margin-bottom: 1rem;
 }
 
+.form-control::placeholder {
+    color: rgba(51, 102, 153, 0.7);
+    font-weight: 500;
+}
+
+.form-control:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: rgba(51, 102, 153, 0.7);
+    font-weight: 500;
+}
+
+.form-control::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: rgba(51, 102, 153, 0.7);
+    font-weight: 500;
+}
+
 #contact-form button {
     background-color: rgb(51, 102, 153);
 }
