@@ -168,10 +168,6 @@ header {
 
 /* *************** Resume section START************* */
 
-#resume-content {
-    padding-top: 2rem;
-}
-
 #resume-content .timeline {
     list-style-type: none;
     position: relative;
@@ -218,11 +214,15 @@ header {
 .timeline h6 {
     display: inline-block;
     color: rgb(14, 136, 240);
-    font-size: 1.2emem;
+    font-size: 1.2em;
 }
 
 
 /* *************************** PROJECTS PAGE START **************************** */
+
+.card {
+    min-width: 15em;
+}
 
 .card img {
     object-fit: contain;
@@ -237,8 +237,9 @@ header {
     color: rgb(51, 102, 153);
 }
 
-#projects-section {
-    padding-bottom: 2em;
+#projects-section .row:nth-child(2) .col-lg-4,
+#projects-section .row:nth-child(2) .col-md-6 {
+    margin-bottom: 2em;
 }
 
 
