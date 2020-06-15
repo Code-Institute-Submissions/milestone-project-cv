@@ -3,9 +3,6 @@
 <br><br>
 
 ## UX
-
-<br>
-
 ****
 
 <br>
@@ -128,7 +125,7 @@ I thought that the resume website could be useful not only to show my skills and
 
 ****
 ## Futures
-****
+
 <br>
 
 ### Existing Features
@@ -179,12 +176,7 @@ I thought that the resume website could be useful not only to show my skills and
 <br>
 
 ## Testing
-<br>
-
-****
-
-<br>
-All of my HTML pages I was testing by:
+<br>All of my HTML pages I was testing by:
 
 * [W3C - Markup Validation Service](https://validator.w3.org/)
 * Using different browsers like Chrome, Firefox, Opera and Internet Explorer.
@@ -246,9 +238,32 @@ Test result: <br> <br>
 ### Contact Page testing
 &nbsp;&nbsp; HTML Checker didn't found any errors : Document checking completed. No errors or warnings to show.
 
+### Contact form testing
+I have tested the contact form by:
+1. Clicking submit form without any data entered. The Bootstrap validator or JS, jQuery script issues the message at the Name field: "Please fill out this field". It means that the name field cannot be empty.
+2. Entering any random string as a name and clicking submit. The validator script issues the message at the Email field: "Please fill out this field". It is meant that email is required in order to submit a form.
+3. I typed any random characters in the email field. The validator script issues the message at the Email field: "Please include an '@' " in the email address".
+4. I added the '@' character at the end of the random string and clicked the submit button. The validator script issues the message at the Email field: "Please enter the part following '@'. Its incomplete". It means the form cannot be submited with an incomplete email address.
+5. I entered a proper email address and clicked the submit button. The validator script issues the message at the message field: "Please fill out this field"
+6. I entered a random string into the message field and clicked the submit button. The form is validated corectly and the form is submitted.
+
+
+
 ****
 # Deployment
-&nbsp;For the project deploymnet I used GitHub Pages and because I used GitHub since the begining of the project development it was very easy to set it up. The GitHub source control system is very handy tool. It allows only in a few clicks to publish the website. <br>&nbsp;In order to see the source code or to download and test localy it can be downloaded or pulled from GitHub. Even on the website it self I made a link to get access to the code. Any potential employer can not only see a visual part of the website, but to see the coding process by browsing my GitHub account.
+&nbsp;For the project deploymnet I used GitHub Pages and because I used GitHub since the begining of the project development it was very easy to set it up. The GitHub source control system is a very handy tool. It allows only in a few clicks to publish the website. 
+<br>
+
+1. First of all you have to have a GitHub account. To create it you need an email address and pasword. 
+2. Secondly you have to create a new repository. I have created it and named it "milestone-project-cv".
+3. Then I cloned it on my local machine by using git bash and entering: git clone git@github.com:GediminasValevicius/milestone-project-cv.git
+4. In order to check what files you have updated or created you must check the status of your project by using comand: "git status".
+5. To add files to the local repository I used command: git add . or git add "file name";
+6. If you want to restore added files you have to use the command: git restore "file name"
+7. To commit localy you must use the comand: git commit -m "Describtion about the commited files"
+8. To push local repository to the remote all you need is to use comand: git push.
+
+<br>&nbsp;In order to see the source code or to download and test localy it can be downloaded or pulled from GitHub. Even on the website it self I made a link to get access to the code. Any potential employer can not only see a visual part of the website, but can see the coding process by browsing my GitHub account.
 
 <br><br>
 
